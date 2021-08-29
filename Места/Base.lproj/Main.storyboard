@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Места-->
         <scene sceneID="M08-eN-0Kh">
             <objects>
                 <tableViewController id="Pbv-9c-Bfa" customClass="MainViewController" customModule="Места" customModuleProvider="target" sceneMemberID="viewController">
@@ -30,7 +30,7 @@
                             <outlet property="delegate" destination="Pbv-9c-Bfa" id="yEs-Vg-TbI"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="OD0-OX-pyU"/>
+                    <navigationItem key="navigationItem" title="Места" id="OD0-OX-pyU"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OQ8-PD-xgB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,6 +43,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="udJ-EI-8Ss">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="24"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="Pbv-9c-Bfa" kind="relationship" relationship="rootViewController" id="mwm-7J-sPY"/>

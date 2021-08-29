@@ -30,8 +30,16 @@ class MainViewController: UITableViewController {
 
         cell.textLabel?.text = restaurantesNames[indexPath.row]//выводим весь список заведений из массива
         cell.imageView?.image = UIImage(named: restaurantesNames[indexPath.row])//добовляем изображения в ячейки
+        cell.imageView?.layer.cornerRadius = cell.frame.size.height / 2//скругляем углы ячейки, радиус равен половине высоты ячейки, но само изображение в ячейке не скругляется
+        cell.imageView?.clipsToBounds = true //тут мы скругляем углы самого изображенияя находящегося в ячейке
 
         return cell
+    }
+    
+    // MARK: - Table view delegate
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 85 //возвращаем нужный нам размер ячейки
     }
     
     /*
