@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04704B0826D4154100B384F5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04704B0726D4154100B384F5 /* MainViewController.swift */; };
+		04718E3D26DB9EDB000877D5 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04718E3C26DB9EDB000877D5 /* CustomTableViewCell.swift */; };
 		0475DF7526D3A29600730765 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475DF7426D3A29600730765 /* AppDelegate.swift */; };
 		0475DF7726D3A29600730765 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475DF7626D3A29600730765 /* SceneDelegate.swift */; };
 		0475DF7C26D3A29600730765 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0475DF7A26D3A29600730765 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		04704B0726D4154100B384F5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		04718E3C26DB9EDB000877D5 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		0475DF7126D3A29600730765 /* Места.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Места.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0475DF7426D3A29600730765 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0475DF7626D3A29600730765 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				0475DF7426D3A29600730765 /* AppDelegate.swift */,
 				04704B0726D4154100B384F5 /* MainViewController.swift */,
+				04718E3C26DB9EDB000877D5 /* CustomTableViewCell.swift */,
 				0475DF7626D3A29600730765 /* SceneDelegate.swift */,
 				0475DF7A26D3A29600730765 /* Main.storyboard */,
 				0475DF7D26D3A29600730765 /* Assets.xcassets */,
@@ -139,6 +142,7 @@
 			files = (
 				04704B0826D4154100B384F5 /* MainViewController.swift in Sources */,
 				0475DF7526D3A29600730765 /* AppDelegate.swift in Sources */,
+				04718E3D26DB9EDB000877D5 /* CustomTableViewCell.swift in Sources */,
 				0475DF7726D3A29600730765 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

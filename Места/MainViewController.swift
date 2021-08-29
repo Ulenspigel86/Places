@@ -26,12 +26,12 @@ class MainViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomTableViewCell //этот класс наследуется от класса CustomTableViewCell с его аутлетами
 
-        cell.textLabel?.text = restaurantesNames[indexPath.row]//выводим весь список заведений из массива
-        cell.imageView?.image = UIImage(named: restaurantesNames[indexPath.row])//добовляем изображения в ячейки
-        cell.imageView?.layer.cornerRadius = cell.frame.size.height / 2//скругляем углы ячейки, радиус равен половине высоты ячейки, но само изображение в ячейке не скругляется
-        cell.imageView?.clipsToBounds = true //тут мы скругляем углы самого изображенияя находящегося в ячейке
+        cell.nameLabel.text = restaurantesNames[indexPath.row]//выводим весь список заведений из массива
+        cell.imageOfPlace.image = UIImage(named: restaurantesNames[indexPath.row])//добовляем изображения в ячейки
+        cell.imageOfPlace.layer.cornerRadius = cell.imageOfPlace.frame.size.height / 2//скругляем углы ячейки, радиус равен половине высоты ячейки, но само изображение в ячейке не скругляется
+        cell.imageOfPlace.clipsToBounds = true //тут мы скругляем углы самого изображенияя находящегося в ячейке
 
         return cell
     }
@@ -39,6 +39,7 @@ class MainViewController: UITableViewController {
     // MARK: - Table view delegate
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        #imageLiteral(resourceName: "simulator_screenshot_64708BC6-0DDD-4066-946B-AC944B8DAA1E.png")
         return 85 //возвращаем нужный нам размер ячейки
     }
     
